@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo-alura" src="imagenes/Logo.png" alt="Logo de alura">
+    </header>
+    <main>
+        <section class="contenedor-entrada">
+            <textarea class="text-area" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion"> <img src="imagenes/exclamacion1.png" alt="signo-exclamacion"> Solo letras
+                    minusculas y sin acento. </h6>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptador" onclick="btnEncriptar()">Encriptador</button>
+                <button class="boton-desencriptador" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenedor-salida">
+            <textarea class="mensaje-encriptado" cols="20" rows="10"></textarea>
+            <div class="copiar-mensaje">
+                <button class="mensaje-copiar" onclick="mensajeCopiar()"> Copiar </button>
+            </div>
+
+        </section>
+    </main>
+    <footer class="desarrollo-pie">
+        <p> Desarollado por Diana Laura Rosas Avalos</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+
+
+</body>
+
+
+
+</html>
